@@ -1,13 +1,21 @@
 .App{
-  padding: 80px 400px 0px 400px;
   font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 .header{
-  padding: 10px;
+  padding: 30px 25px;
+  height: 60px;
   background-color: #21222A;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.header--light{
+  background-color: white;
 }
 .header--class{
   display: flex;
@@ -15,21 +23,29 @@
 }
 .header--image{
   width: 50px;
-  height: 50px;
   margin-right: 10px;
 }
 .header--text{
   color: white;
+  display: flex;
+  align-items: center;
 }
 .header--title{
   color: #00D8FF;
 }
 .main{
   color: white;
-  height: 500px;
+  height: 800px;
   padding-top: 20px;
   padding-left: 50px;
-  background: #282D35 url('./images/logo.png') no-repeat 125% center;
+  background: #282D35 url('./images/react-icon-dark.png') no-repeat right center;
+  flex: 1 1 auto;
+  background-size: 200px;
+}
+.main--light{
+  background-image: url('./images/react-icon-light.png');
+  color: #2B283A;
+  background-color: white;
 }
 .main--title{
   letter-spacing: -0.05rem;
@@ -48,4 +64,20 @@ ul li::before{
   width: 1rem;
   font-size: 1.5rem;
   margin-left: -1rem;
+}
+.settings{
+  margin: 4px;
+  font-weight: bold;
+}
+.light--light{
+  color: #555;
+}
+.light--dark{
+  color: #666;
+}
+.dark--light{
+  color: #ccc;
+}
+.fa-2xl{
+  cursor: pointer;
 }
